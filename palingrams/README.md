@@ -32,3 +32,7 @@ Our program will examine the core word based on the following inferences:
 6. The palindromic sequence does not have to be a real word (unless it occupies the whole word).
 7. The two parts cannot overlap or share letters.
 8. The sequence is reversible. 
+
+```sh
+python palingrams.py
+```
