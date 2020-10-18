@@ -7,3 +7,12 @@ Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming A
 “You’ll start by finding single-word palindromes in a dictionary and then move on to the more difficult palindromic phrases.”
 
 Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming Activities to Make You Smarter”. Apple Books. 
+
+```sh
+python palindromes.py
+```
+
+## Part 2: Finding Palingrams
+“Use Python to search an English language dictionary for two-word palingrams. Analyze and optimize the palingram code using the cProfile tool.”
+
+Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming Activities to Make You Smarter”. Apple Books. 
