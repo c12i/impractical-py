@@ -16,3 +16,19 @@ python palindromes.py
 “Use Python to search an English language dictionary for two-word palingrams. Analyze and optimize the palingram code using the cProfile tool.”
 
 Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming Activities to Make You Smarter”. Apple Books. 
+
+“Like palindromes, palingrams read the same forward and backward. I like to think of these as a core word, like nurses, from which a palindromic sequence and reversed word are derived ”
+
+Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming Activities to Make You Smarter”. Apple Books. 
+
+![img](palingram-pseudocode.png)
+
+Our program will examine the core word based on the following inferences:
+1. It can have either an odd or even number of letters.
+2. One contiguous part of the word spells a real word when read backward.
+3. This contiguous part can occupy part or all of the core word.
+4. The other contiguous part contains a palindromic sequence of letters.
+5. The palindromic sequence can occupy part or all of the core word.
+6. The palindromic sequence does not have to be a real word (unless it occupies the whole word).
+7. The two parts cannot overlap or share letters.
+8. The sequence is reversible. 
