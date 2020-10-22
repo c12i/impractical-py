@@ -1,4 +1,4 @@
-## Impractical Python
+## Impractical Python Projects
 A plethora of projects based of the book *Impractical Python Projects: Playful Programming Activities to Make You Smarter* by Lee Vaughan.
 
 <div align="center">
