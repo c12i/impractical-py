@@ -33,6 +33,15 @@ Our program will examine the core word based on the following inferences:
 7. The two parts cannot overlap or share letters.
 8. The sequence is reversible. 
 
+There are two versions of this script.
+
+1. Slow and unoptimized/ brute-force version `(On^2)` with searching of words from a list:
+
 ```sh
 python palingrams.py
+```
+2. Optimized version `(On)` with searching of words from a hash set:
+
+```sh
+python palingrams_optimized.py
 ```
