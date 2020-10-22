@@ -7,6 +7,8 @@ A plethora of projects based of the book *Impractical Python Projects: Playful P
 
 </div>
 
+Get the book [here](https://nostarch.com/impracticalpythonprojects) or contact me.
+
 ## Contents
 * [x] Silly name generator
 * [x] Palindromes/ Palingrams
