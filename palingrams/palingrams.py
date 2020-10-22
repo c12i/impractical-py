@@ -27,6 +27,3 @@ def find_palingrams():
                     pali_list.append((word, rev_word[:end-idx]))
 
     return pali_list
-    
-palingrams = find_palingrams()
-print(palingrams)
