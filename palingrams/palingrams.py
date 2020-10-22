@@ -27,7 +27,6 @@ def find_palingrams():
                     pali_list.append((word, rev_word[:end-idx]))
 
     return pali_list
-
-if __name__ == "__main__":
-    palingrams = find_palingrams()
-    print(palingrams)
+    
+palingrams = find_palingrams()
+print(palingrams)
