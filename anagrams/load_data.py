@@ -12,6 +12,7 @@ Requires - import sys
 
 import sys
 
+
 def load(file):
     """
     Open a txt file and read lowercase strings to a list

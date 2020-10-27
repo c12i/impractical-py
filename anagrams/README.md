@@ -8,3 +8,8 @@ Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming A
 ```sh
 python single_word_anagrams.py
 ```
+
+## Part 2: Finding Phrase Anagrams
+“Write a Python program that lets a user interactively build an anagram phrase from the letters in their name.”
+
+Excerpt From: Lee Vaughan. “Impractical Python Projects: Playful Programming Activities to Make You Smarter”. Apple Books. 
