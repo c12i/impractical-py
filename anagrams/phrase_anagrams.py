@@ -39,8 +39,46 @@ def find_anagrams(name, word_list):
     print(f"Number of remaining real world anagrams = {len(anagrams)}")
 
 
+def process_choice(name):
+    """
+    check user choice for validity, returns choice and left over letters
+    :param name:
+    :return: tuple (string, string)
+    """
+    while True:
+        choice = input("\nMake a choice else Enter to start over or '#' to end: ")
+
+        if choice == "":
+            main()
+        elif choice == "#":
+            sys.exit()
+        else:
+            # Once the user makes a successful choice, the string is assigned to the variable candidate, stripped off
+            # whitespace and converted to all lowercase; so as it can be directly compared to the name variable. After
+            # that, a list is build from the name variable to hold any remaining letters
+            candidate = "".join(choice.lower().split())
+            left_over_list = list(name)
+
+            # Now we begin a loop to subtract the letters used in candidate. If a chosen letter is present in the list
+            # it's removed
+            for letter in candidate:
+                if letter in left_over_list:
+                    left_over_list.remove(letter)
+
+            if len(name) - len(left_over_list) == len(candidate):
+                print("You entered a word that isn't displayed on the list, or entered multiple words", file=sys.stderr)
+                break
+            else:
+                print("Won't work! Please make another choice!", file=sys.stderr)
+
+    # makes display more readable
+    name = "".join(left_over_list)
+
+    return choice, name
+
+
 def main():
-    find_anagrams(initial_name, dict_file)
+    pass
 
 
 if __name__ == '__main__':
