@@ -121,7 +121,7 @@ def main():
 
         elif len(temp_phrase) == limit:
             print("\n *****FINISHED*****\n")
-            print("Anagram of name=", end=" ")
+            print("Anagram of name=")
             print(phrase, file=sys.stderr)
             print()
 
