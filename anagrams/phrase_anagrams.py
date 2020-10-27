@@ -80,24 +80,45 @@ def main():
     """
     Helps user build anagram phrase from their name
     """
+
+    # Turn initial name into a continuous string of lowercase chars w/o whitespace and convert them to lowercase for
+    # comparisons to work as intended. We also remove hyphens/ underscores and whitespaces
     name = "".join(initial_name.lower().split())
     name = name.replace("-", "")
+    name = name.replace("_", "")
+
+    # Get the length of the name to use as a limit in the while loop, this will let us know when the anagram phrase has
+    # used up all the letters in the name and its time to end the loop
     limit = len(name)
+
+    # Variable to hold the anagram phrase
     phrase = ""
+
+    # Loop controller
     running = True
 
+    # The main loop that lets us iterate over the name and build an anagram phrase
     while running:
+        # A string to hold the growing phrase stripped off whitespace
         temp_phrase = phrase.replace(" ", "")
 
+        # If length of temp_phrase is < the limit, display the current length of the phrase as a prelude to engaging
+        # with the user
         if len(temp_phrase) < limit:
             print(f"Length of anagram phrase = {len(temp_phrase)}")
 
+            # Call find_anagrams function and pass the name and dictionary file to get the list of anagrams from name
             find_anagrams(name, dict_file)
+
+            # Here we show the user the current phrase
             print("Current anagram phrases = ", end=" ")
             print(phrase, file=sys.stderr)
 
+            # We now call the process_choice function to get the users's word choice and add it to the growing
+            # anagram phrase. This also updates the name variable so that we can use the new one again on the loop
             choice, name = process_choice(name)
             phrase += choice + ""
+
         elif len(temp_phrase) == limit:
             print("\n *****FINISHED*****\n")
             print("Anagram of name=", end=" ")
